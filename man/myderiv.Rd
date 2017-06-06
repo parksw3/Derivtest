@@ -4,7 +4,7 @@
 \name{myderiv}
 \alias{myderiv}
 \title{my derivative object}
-\format{An object of class \code{numeric} of length 2.}
+\format{An object of class \code{call} of length 3.}
 \usage{
 myderiv
 }
