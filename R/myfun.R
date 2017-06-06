@@ -21,11 +21,12 @@ mydfun <- function(x, y) NULL
 ##' Deriv(myfun(x, y), c("x", "y"))
 ##' Deriv2(myfun(x, y), c("x", "y"))
 Deriv2 <- function(expr, var) {
-    Deriv(expr, var)
+    drule[["myfun"]] <- alist(x=mydfun(x, x), y=mydfun(y, y))
+    Deriv(substitute(expr), var)
 }
 
-drule[["myfun"]] <- alist(x=mydfun(x, x), y=mydfun(y, y))
 
 ##' my derivative object
 ##' @export
 myderiv <- Deriv(myfun(x, y), c("x", "y"))
+
