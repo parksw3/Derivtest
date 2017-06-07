@@ -2,6 +2,7 @@
 
 export(Deriv2)
 export(myderiv)
+export(myderiv2)
 export(mydfun)
 export(myfun)
 importFrom(Deriv,Deriv)

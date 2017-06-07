@@ -26,8 +26,10 @@ Deriv2 <- function(expr, var) {
     Deriv(substitute(expr), var)
 }
 
-
 ##' my derivative object
 ##' @export
 myderiv <- Deriv(myfun(x, y), c("x", "y"))
 
+##' my derivative object 2
+##' @export
+myderiv2 <- Deriv2(myfun(x, y), c("x", "y"))
